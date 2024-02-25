@@ -38,4 +38,40 @@ body {
 .main {
     grid-area: main;
     background-color: lightgray;
+    display: grid;
+    grid-template-areas: "projects projects side-info"
+                         "projects projects side-info"
+                         "projects projects side-info";
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 20px;
+    gap: 15px;
+}
+
+.projects {
+    grid-area: projects;
+    display: grid;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+}
+
+.side-info {
+    grid-area: side-info;
+    display: grid;
+    grid-template-areas: "announcements"
+                         "trending";
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.announcements {
+    grid-area: announcements;
+    background-color: white;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: white;
 }
