@@ -6,12 +6,11 @@ body {
 .container {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-areas: "sidebar content content content"
                          "sidebar content content content"
                          "sidebar content content content"
                          "sidebar content content content";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 250px 1fr 1fr 1fr;
 }
 
@@ -22,7 +21,6 @@ body {
                          "main main main"
                          "main main main"
                          "main main main";
-    grid-template-rows: 1fr 2fr 2fr 2fr;
 }
 
 .sidebar {
@@ -42,21 +40,21 @@ body {
     grid-template-areas: "projects projects side-info"
                          "projects projects side-info"
                          "projects projects side-info";
-    grid-template-rows: repeat(auto-fit, minmax(400px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     padding: 20px;
     gap: 15px;
-    overflow: auto;
 }
 
 .projects {
     grid-area: projects;
     display: grid;
     gap: 15px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
 }
 
 .card {
     background-color: white;
+    min-height: 200px;
 }
 
 .side-info {
@@ -64,14 +62,13 @@ body {
     display: grid;
     grid-template-areas: "announcements"
                          "trending";
-    grid-template-rows: 1fr 1fr;
     gap: 15px;
+    min-width: 150px;
 }
 
 .announcements {
     grid-area: announcements;
     background-color: white;
-    min-width: 250px;
 }
 
 .trending {
