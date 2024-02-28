@@ -7,6 +7,7 @@ body {
     display: grid;
     grid-template-columns: 250px 1fr;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .sidebar {
@@ -25,8 +26,7 @@ body {
 .main {
     background-color: lightgray;
     display: grid;
-    grid-template-columns: minmax(500px, 2fr) minmax(300px, 1fr);
-    overflow: hidden;
+    grid-template-columns: minmax(500px, 100%) minmax(400px, 1fr);
 }
  
 .projects {
@@ -34,16 +34,16 @@ body {
 }
 
 .side-info {
-   
+   max-width: 400px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .main {
-       grid-template-columns: 1fr; /* Set to single column layout for smaller screens */
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    .main .side-info {
-        grid-column: 1 / span 1; /* Ensure side-info spans the entire row */
-        grid-row: auto; /* Allow side-info to move down to the next row */
+    .side-info {
+        max-width: 100%;
     }
 }
 
