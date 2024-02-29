@@ -37,7 +37,7 @@ body {
 
 .card {
   background-color: white;
-  height: 200px;
+  min-height: 250px;
 }
 
 .side-info {
