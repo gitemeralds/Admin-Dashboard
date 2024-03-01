@@ -20,6 +20,46 @@ body {
 
 .header {
   background-color: white;
+  display: grid;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.header .top {
+  display: grid;
+  grid-template-columns: 60px 3fr 20px 100px 100px 100px 2fr 110px 1fr;
+  align-items: center;
+}
+
+.search-symbol {
+  height: 50px;
+}
+
+.search-bar {
+  height: 40px;
+  background-color: lightgray;
+}
+
+.header button {
+  height: 40px;
+  background-color: #299fff;
+  color: white;
+  font-weight: bold;
+}
+
+.profile-image-wrapper {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  margin-top: -15px;
 }
 
 .main {
