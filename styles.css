@@ -78,6 +78,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+.projects {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
@@ -128,12 +133,12 @@ h2 {
   border-radius: 6px;
 }
 
-.trending-section {
+.friends-section {
   display: grid;
   grid-template-rows: min-content 1fr;
 }
 
-.trending-stuff {
+.friends-stuff {
   background-color: white;
   display: grid;
   border-radius: 6px;
@@ -154,5 +159,5 @@ h2 {
   }
 }
 
-/* TODO: ADDED STYLING TO CARDS, ANNOUNCMENTS AND TRENDING 
+/* TODO: ADDED STYLING TO CARDS, ANNOUNCMENTS AND friends 
 TODO: MAKE PROJECTS SECTION AND SIDE INFO SECTION THE SAME SIZE*/
