@@ -15,6 +15,44 @@ h2 {
 
 .sidebar {
   background-color: rgb(46, 178, 255);
+  display: grid;
+  gap: 40px;
+  grid-template-rows: min-content min-content min-content;
+  padding: 20px;
+}
+
+.sidebar svg {
+  height: 20px;
+}
+
+.dashboard svg {
+  height: 50px;
+}
+
+.dashboard-text {
+  font-size: x-large;
+}
+
+.sidebar .text {
+  color: white;
+  font-weight: bolder;
+}
+
+.sidebar-element {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  gap: 15px;
+}
+
+.sidebar-main {
+  display: grid;
+  gap: 15px;
+}
+
+.sidebar-misc {
+  display: grid;
+  gap: 15px;
 }
 
 .content {
@@ -26,7 +64,7 @@ h2 {
   background-color: white;
   display: grid;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   font-size: xx-large;
 }
@@ -158,6 +196,3 @@ h2 {
     min-height: 1000px;
   }
 }
-
-/* TODO: ADDED STYLING TO CARDS, ANNOUNCMENTS AND friends 
-TODO: MAKE PROJECTS SECTION AND SIDE INFO SECTION THE SAME SIZE*/
