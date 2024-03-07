@@ -123,7 +123,7 @@ h2 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 15px;
 }
 
@@ -137,7 +137,7 @@ h2 {
   border-left-style: solid;
   display: grid;
   grid-template-rows: min-content min-content auto;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .icons {
