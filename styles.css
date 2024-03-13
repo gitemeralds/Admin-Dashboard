@@ -123,17 +123,17 @@ h2 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
   gap: 15px;
 }
 
 .card {
   background-color: white;
-  min-height: 400px;
   border-radius: 6px;
   padding: 40px;
   border-left-color: rgb(255, 187, 0);
-  border-left-width: 8px;
+  border-left-width: 12px;
   border-left-style: solid;
   display: grid;
   grid-template-rows: min-content min-content auto;
@@ -186,6 +186,7 @@ h2 {
   .main {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
   }
 
   .side-info {
@@ -194,5 +195,8 @@ h2 {
     padding: 15px 0px 0px 0px;
     grid-template-rows: 1fr 1fr;
     min-height: 1000px;
+  }
+  .cards{
+    grid-template-columns: 1fr;
   }
 }
